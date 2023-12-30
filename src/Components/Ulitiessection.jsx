@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import s2_elp1 from "../Images/s2-card-elp1.png";
+import s2_elp2 from "../Images/s2-card-elp2.png";
 const mycardinfo = [
     {
         svg: <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -37,8 +39,10 @@ const Ulitiessection = () => {
         });
     }, [])
     const mycard = mycardinfo.map((mycard) => (
-        <Col lg={4} sm={6}  data-aos="fade-down">
-            <div className='s3-card mt-4 mt-lg-0'>
+        <Col lg={4} sm={6} data-aos="fade-down">
+            <div className='s3-card mt-4 mt-lg-0 position-relative overflow-hidden'>
+                <img src={s2_elp1} alt="" className=' position-absolute top-0 end-0' />
+                <img src={s2_elp2} alt="" className=' position-absolute bottom-0 start-0' />
                 <div className=' text-center'>{mycard.svg}</div>
                 <p className=' lh-108 fw-semibold fs-md text-center ff-monsterat color-white1 mt-3'>{mycard.text}</p>
                 <p className=' lh-160 fw-normal text-center ff-monsterat color-white1 fs-sm mb-0'>Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra amet et. Erat nam molestie. Vitae mollis lacus senectus mattis nisl. Porta , adipiscing sed mus diam amet, ac sed tellus. </p>
