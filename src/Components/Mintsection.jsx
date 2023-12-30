@@ -20,6 +20,7 @@ const Mintsection = () => {
 
         setCount(prevCount => (prevCount > 1 ? prevCount - 1 : 1));
     }
+    const formattedCount = count < 10 ? `0${count}` : count;
     return (
         <div className='s5-bg-img s5-padding position-relative'>
             <svg className=' position-absolute mint-els1 start-0 d-none d-sm-block' xmlns="http://www.w3.org/2000/svg" width="465" height="757" viewBox="0 0 465 757" fill="none">
@@ -33,7 +34,7 @@ const Mintsection = () => {
                         <feGaussianBlur stdDeviation="146" result="effect1_foregroundBlur_0_62" />
                     </filter>
                 </defs>
-            </svg> 
+            </svg>
             <img src={mint_elps2} alt="mint" className='mint-elps2 position-absolute end-0 d-none d-sm-block' />
             <Container>
                 <Row>
@@ -41,7 +42,7 @@ const Mintsection = () => {
                         <img src={darubottle} alt="daru" className='w-100 s5-img h-100' />
                     </Col>
                     <Col md={6} className='pt-4 pt-md-0 d-flex justify-content-center flex-column position-relative z-1'>
-                        <h1 className=' fs-1lg color-white1 fw-normal lh-108 mb-1 ff-azo'data-aos="fade-down">Mint NFT</h1>
+                        <h1 className=' fs-1lg color-white1 fw-normal lh-108 mb-1 ff-azo' data-aos="fade-down">Mint NFT</h1>
                         <Row>
                             <Col className='col-6 mt-5' data-aos="fade-up">
                                 <p className=' fs-lg color-white1 lh-108 ff-monsterat fw-black mb-0'>9999</p>
@@ -62,7 +63,7 @@ const Mintsection = () => {
                         </Row>
                         <div className=' d-flex align-items-center gap-3' data-aos="fade-up">
                             <button className='fw-black lh-108 fs-lg color-black1 ff-monsterat bg-White1 plus-minus m-0' onClick={decrementCount}>-</button>
-                            <div className='s5-number d-flex align-items-center justify-content-center ff-monsterat fs-lg color-white1 fw-black lh-108'>{count}</div>
+                            <div className='s5-number d-flex align-items-center justify-content-center ff-monsterat fs-lg color-white1 fw-black lh-108'> {formattedCount}</div>
                             <button className='fw-black lh-108 fs-lg color-black1 ff-monsterat bg-White1 plus-minus m-0' onClick={incrementCount}>+</button>
                         </div>
                         <button className=' text-center lh-108 fw-normal color-black1 fs-md mint-button ff-azo' data-aos="fade-down"><span>MINT NOW</span></button>
