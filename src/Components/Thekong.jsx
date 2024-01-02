@@ -52,6 +52,13 @@ const Thekong = () => {
             {
                 breakpoint: 690,
                 settings: {
+                    slidesToShow: 3.5,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 650,
+                settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1
                 }
@@ -59,31 +66,38 @@ const Thekong = () => {
             {
                 breakpoint: 595,
                 settings: {
-                    slidesToShow: 2.5,
+                    slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 500,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3.5,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 390,
                 settings: {
-                    slidesToShow: 1.5,
+                    slidesToShow: 2.5,
                     slidesToScroll: 1
                 }
             },
-            {
-                breakpoint: 340,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
+            // {
+            //     breakpoint: 340,
+            //     settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1
+            //     }
+            // }
         ]
     };
     const slider2 = {
@@ -114,38 +128,45 @@ const Thekong = () => {
             {
                 breakpoint: 690,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 3.5,
                     slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 595,
                 settings: {
-                    slidesToShow: 2.5,
+                    slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 500,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3.5,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 390,
                 settings: {
-                    slidesToShow: 1.5,
+                    slidesToShow: 2.5,
                     slidesToScroll: 1
                 }
             },
-            {
-                breakpoint: 340,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
+            // {
+            //     breakpoint: 340,
+            //     settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1
+            //     }
+            // }
         ]
     };
     return (
@@ -153,20 +174,20 @@ const Thekong = () => {
             <Container className=''>
                 <h1 className="fs-1lg fw-normal color-white1 lh-108 text-center ff-azo">THE KONGS</h1>
                 <Slider {...settings} className=' d-block d-lg-none mt-5'>
-                    <div className=' mx-auto'> <img src={s4_img1} alt="s4" className=' mx-auto box_shadow' data-aos="fade-down"/></div>
-                    <div className=' mx-auto'> <img src={s4_img2} alt="s4" className=' mx-auto box_shadow' data-aos="fade-down"/></div>
-                    <div className=' mx-auto'> <img src={s4_img3} alt="s4" className=' mx-auto box_shadow' data-aos="fade-down"/></div>
-                    <div className=' mx-auto'> <img src={s4_img4} alt="s4" className=' mx-auto box_shadow' data-aos="fade-down"/></div>
-                    <div className=' mx-auto'> <img src={s4_img5} alt="s4" className=' mx-auto box_shadow' data-aos="fade-down"/></div>
+                    <div className=' mx-auto'> <img src={s4_img1} alt="s4" className=' mx-auto box_shadow bandar-img px-2' data-aos="fade-down"/></div>
+                    <div className=' mx-auto'> <img src={s4_img2} alt="s4" className=' mx-auto box_shadow bandar-img px-2' data-aos="fade-down"/></div>
+                    <div className=' mx-auto'> <img src={s4_img3} alt="s4" className=' mx-auto box_shadow bandar-img px-2' data-aos="fade-down"/></div>
+                    <div className=' mx-auto'> <img src={s4_img4} alt="s4" className=' mx-auto box_shadow bandar-img px-2' data-aos="fade-down"/></div>
+                    <div className=' mx-auto'> <img src={s4_img5} alt="s4" className=' mx-auto box_shadow bandar-img px-2' data-aos="fade-down"/></div>
                 </Slider>
                 <div className=' d-flex justify-content-center position-relative'><img src={bigbandar} alt="big" className='bigmonkey w-100 h-100 mx-auto position-relative z-1' />
                 <img src={s4_elp} alt="" className='s4-elp d-none d-md-block'/></div>
                 <Slider {...slider2} className=' d-block d-lg-none mt-5'>
-                    <div className=' mx-auto'> <img src={s4_img6} alt="s4" className=' mx-auto box_shadow' data-aos="fade-up"/></div>
-                    <div className=' mx-auto'> <img src={s4_img7} alt="s4" className=' mx-auto box_shadow' data-aos="fade-up"/></div>
-                    <div className=' mx-auto'> <img src={s4_img8} alt="s4" className=' mx-auto box_shadow' data-aos="fade-up"/></div>
-                    <div className=' mx-auto'> <img src={s4_img9} alt="s4" className=' mx-auto box_shadow' data-aos="fade-up"/></div>
-                    <div className=' mx-auto'> <img src={s4_img10} alt="s4" className=' mx-auto box_shadow' data-aos="fade-up"/></div>
+                    <div className=' mx-auto'> <img src={s4_img6} alt="s4" className=' mx-auto box_shadow bandar-img px-2' data-aos="fade-up"/></div>
+                    <div className=' mx-auto'> <img src={s4_img7} alt="s4" className=' mx-auto box_shadow bandar-img px-2' data-aos="fade-up"/></div>
+                    <div className=' mx-auto'> <img src={s4_img8} alt="s4" className=' mx-auto box_shadow bandar-img px-2' data-aos="fade-up"/></div>
+                    <div className=' mx-auto'> <img src={s4_img9} alt="s4" className=' mx-auto box_shadow bandar-img px-2' data-aos="fade-up"/></div>
+                    <div className=' mx-auto'> <img src={s4_img10} alt="s4" className=' mx-auto box_shadow bandar-img px-2' data-aos="fade-up"/></div>
                 </Slider>
                 <div className=' d-none d-lg-block'>
                     <img src={s4_img1} alt="s4" className='s4-img1 box_shadow' data-aos="fade-down" />

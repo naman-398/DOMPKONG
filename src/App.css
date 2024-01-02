@@ -52,12 +52,19 @@
 }
 
 .loader::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   display: block;
-  background: linear-gradient(to right,#f1c85d 33.3%, transparent 33.3% , transparent 66.6%, #fdda60 66.6%) no-repeat;
+  background: linear-gradient(
+      to right,
+      #f1c85d 33.3%,
+      transparent 33.3%,
+      transparent 66.6%,
+      #fdda60 66.6%
+    )
+    no-repeat;
   box-shadow: 0px 9px 29px 0px rgba(253, 218, 96, 0.5);
   background-size: 300%;
   background-position: 100%;
@@ -362,6 +369,7 @@
   left: 0;
   z-index: 3;
 }
+
 .s4-img2 {
   position: absolute;
   top: 21%;
@@ -445,7 +453,7 @@
 }
 .s5-img {
   max-width: 358px !important;
-  max-width: 804px;
+  max-width: 200px !important;
 }
 
 .mint-button {
@@ -778,6 +786,10 @@
 .box_shadow:hover {
   filter: drop-shadow(0px 1px 10px rgba(253, 218, 96, 0.7));
 }
+.bandar-img {
+  max-width: 130px;
+  max-height: 130px;
+}
 @media (min-width: 440px) {
   :root {
     /* font-size */
@@ -799,6 +811,13 @@
     --fs-md: 24px;
     --fs-lg: 36px;
     --fs-1lg: 64px;
+  }
+  .bandar-img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+  .s5-img {
+    max-width: 804px !important;
   }
   .s3-card-padding {
     padding-top: 54px;
