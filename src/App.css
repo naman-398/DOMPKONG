@@ -817,6 +817,7 @@
     max-height: 180px;
   }
   .s5-img {
+    max-width: 358px !important;
     max-width: 804px !important;
   }
   .s3-card-padding {

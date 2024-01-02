@@ -68,10 +68,10 @@ const Herosection = () => {
                 </Container>
             </nav>
             <section>
-                <Container>
-                    <h1 className=' fw-normal fs-1lg color-white1 lh-108 mx-auto text-center main-heading ff-azo'>WELCOME <br />
+                <Container className=' position-relative z-3'>
+                    <h1 className=' fw-normal fs-1lg color-white1 lh-108 mx-auto text-center main-heading ff-azo position-relative z-3'>WELCOME <br />
                         TO <span className=' color-yellow head-domp'>DOMPKONG</span></h1>
-                    <p className=' ff-monsterat fs-sm fw-normal lh-160 color-white1 text-center mx-auto header-para mt-4'>Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra amet et. Erat nam molestie. Vita</p>
+                    <p className=' ff-monsterat fs-sm fw-normal lh-160 color-white1 text-center mx-auto header-para mt-4 position-relative z-3'>Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra amet et. Erat nam molestie. Vita</p>
                     <div className=' d-flex align-items-center gap-hero-button justify-content-center mt-header-button flex-wrap'>
                         <CommonBtn text="Whitepaper" />
                         <CommonBtn text="Mint" />

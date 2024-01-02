@@ -39,7 +39,7 @@ const Mintsection = () => {
             <Container>
                 <Row>
                     <Col md={6} className=' d-flex justify-content-center' data-aos="fade-down">
-                        <img src={darubottle} alt="daru" className='w-100 s5-img h-100' />
+                        <img src={darubottle} alt="daru" className='s5-img h-100' />
                     </Col>
                     <Col md={6} className='pt-4 pt-md-0 d-flex justify-content-center flex-column position-relative z-1'>
                         <h1 className=' fs-1lg color-white1 fw-normal lh-108 mb-1 ff-azo' data-aos="fade-down">Mint NFT</h1>
